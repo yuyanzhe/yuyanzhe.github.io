@@ -1,0 +1,163 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+/* =============================================================================
+   主体
+   ========================================================================== */
+/*
+ * 1. 正确的文本大小调整，修复IE6/7使用em单位时正文字体大小
+ * 2. 防止IOS蚊子大小禁止用户缩放，调整设备方向详情参考 h5bp.com/g
+ */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 12px; line-height: 1.4; }
+/*
+ * 去掉文字阴影 h5bp.com/i
+ * 鼠标拖选文字默认为粉红色，请选择你喜欢的颜色
+ * 
+ */
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+/* =============================================================================
+   a链接
+   ========================================================================== */
+/*
+ * 改成你喜欢的颜色
+ */
+a { color: #00e; text-decoration:none;}
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+/* 修复火狐浏览器虚框 h5bp.com/h */
+a:hover, a:active { outline: 0; }
+/* =============================================================================
+   Typography
+   ========================================================================== */
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+/* 重新定义monospace字体家族 h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+/* 提高 pre-formatted文本的可读性 */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+/* 不影响行高的上标和下表内容 h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+/* =============================================================================
+    列表
+   ========================================================================== */
+ul, ol {list-style: none; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+menu{ margin: 0;padding: 0;}
+/* =============================================================================
+   嵌入内容
+   ========================================================================== */
+/*
+ * 1. 提高图像在IE7缩放的质量 h5bp.com/d
+ * 2. 去掉容器上的边框 h5bp.com/e
+ */
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+/*
+ * IE9隐藏不正确的溢出
+ */
+svg:not(:root) { overflow: hidden; }
+/* =============================================================================
+   独立的流内容（图像、图表、照片、代码等等）
+   ========================================================================== */
+figure { margin: 0; }
+/* =============================================================================
+   表单
+   ========================================================================== */
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+/*
+ * 1. 不继承 IE6/7/8/9的颜色
+ * 2. 使IE6/7正确的对齐
+ */
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+/*
+ * 1. 修正文字大小，不继承浏览器默认
+ * 2. 删除firefox3、4 safari5的边缘
+ * 3. 定义垂直对齐方式显示
+ */
+button, input, select, textarea { font-size: 100%; margin: 0; padding:0;}
+/*
+ * 1. 定义标准线的高度
+ */
+button, input { line-height: normal; }
+/*
+ * 1. 显示手型光标，突出可点击形式
+ * 2. 允许在IOS可点击的形式元素样式
+ * 3. 在IE7中显示正确的间距（）
+ */
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+/*
+ * input大小与外观统一
+ */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+/*
+ * 删除firefox填充值 h5bp.com/l
+ */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+/*
+ * 1. 删除默认的垂直滚动 IE6/7/8/9
+ * 2. 只允许垂直调整大小
+ */
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+/* 表单验证有效性的颜色*/
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+/* =============================================================================
+   表格
+   ========================================================================== */
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+/* ==|== 移动风格 ======================================================
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* 此处样式调整为符合窗口条件 */
+}
+/* ==========================================================================
+   常用样式汇总
+   ========================================================================== */
+/* 图片背景文字缩进 */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+/* 隐藏屏幕阅读器 h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+/* 视觉隐藏 但可以屏幕 阅读clip: rect裁剪 h5bp.com/v */
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+/* 清除浮动 h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+/*公共样式，开始{*/
